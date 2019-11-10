@@ -42,5 +42,10 @@ describe RomanNumerals do
     expect(RomanNumerals.convert(8)).to eq("VIII")
   end
 
+  it "must be able to convert 9 to 'IX'" do
+    expect(RomanNumerals.convert(9)).to eq("IX")
+  end
+
+
 
 end

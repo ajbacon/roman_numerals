@@ -11,6 +11,7 @@ class RomanNumerals
   }
 
   NUMERALS2 = {
+    9 => "IX",
     5 => "V",
     1 => "I"
   }
@@ -23,9 +24,7 @@ class RomanNumerals
         num -= digit 
       end 
     end
-    
     numeral
-    
   end
 end
 
