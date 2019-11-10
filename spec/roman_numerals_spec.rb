@@ -8,25 +8,25 @@ describe RomanNumerals do
     expect(RomanNumerals.convert(5)).to eq("V")
   end
 
-  # it "must be able to convert 10 to 'X'" do
-  #   expect(RomanNumerals.convert(10)).to eq("X")
-  # end
+  it "must be able to convert 10 to 'X'" do
+    expect(RomanNumerals.convert(10)).to eq("X")
+  end
 
-  # it "must be able to convert 50 to 'L'" do
-  #   expect(RomanNumerals.convert(50)).to eq("L")
-  # end
+  it "must be able to convert 50 to 'L'" do
+    expect(RomanNumerals.convert(50)).to eq("L")
+  end
 
-  # it "must be able to convert 100 to 'C'" do
-  #   expect(RomanNumerals.convert(100)).to eq("C")
-  # end
+  it "must be able to convert 100 to 'C'" do
+    expect(RomanNumerals.convert(100)).to eq("C")
+  end
 
-  # it "must be able to convert 500 to 'D'" do
-  #   expect(RomanNumerals.convert(500)).to eq("D")
-  # end
+  it "must be able to convert 500 to 'D'" do
+    expect(RomanNumerals.convert(500)).to eq("D")
+  end
 
-  # it "must be able to convert 1000 to 'M'" do
-  #   expect(RomanNumerals.convert(1000)).to eq("M")
-  # end
+  it "must be able to convert 1000 to 'M'" do
+    expect(RomanNumerals.convert(1000)).to eq("M")
+  end
 
   #-----
 
@@ -45,6 +45,22 @@ describe RomanNumerals do
   it "must be able to convert 9 to 'IX'" do
     expect(RomanNumerals.convert(9)).to eq("IX")
   end
+
+  it "must be able to convert 99 to 'XCIX'" do
+    expect(RomanNumerals.convert(99)).to eq("XCIX")
+  end
+
+  it "must be able to convert 999 to 'CMXCIX'" do
+    expect(RomanNumerals.convert(999)).to eq("CMXCIX")
+  end
+
+  it "must be able to convert 9999 to 'MMMMMMMMMCMXCIX'" do
+    expect(RomanNumerals.convert(9999)).to eq("MMMMMMMMMCMXCIX")
+  end
+  it "must be able to covert 534 to DXXXIV" do
+    expect(RomanNumerals.convert(534)).to eq("DXXXIV")
+  end
+
 
 
 
